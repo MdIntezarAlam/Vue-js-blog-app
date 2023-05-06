@@ -7,8 +7,12 @@
     <Method_and_Data />
     <p>Event Handling</p>
     <Event /> -->
-    <p>Form Input</p>
-    <Input />
+    <!-- <p>Form Input</p>
+    <Input /> -->
+    <!-- <p>if else</p>
+    <IfElse /> -->
+    <p>For Loop</p>
+    <ForLoop />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -24,13 +28,16 @@ import FileTwo from "./FileTwo.vue";
 import Method_and_Data from "./Method_and_Data.vue";
 import Input from "./Input.vue";
 import Event from "./Event.vue";
-
+import IfElse from "./IfElse.vue";
+import ForLoop from "./ForLoop.vue";
 export default {
   components: {
     FileTwo,
     Method_and_Data,
     Event,
     Input,
+    IfElse,
+    ForLoop,
   },
 };
 </script>

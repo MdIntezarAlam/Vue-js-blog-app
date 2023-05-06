@@ -5,7 +5,7 @@
     <br /><br />
     <input v-model="uPass" type="text" placeholder="Enter Passwor" /><br />
     <br /><br />
-    <p> for checkbox values=> Select Language</p>
+    <p>for checkbox values=> Select Language</p>
     <label for="java">Java</label>
     <input v-model="checkBoxValue" id="java" type="checkbox" value="java" />
     <label for="python">python</label>
@@ -39,7 +39,13 @@ export default {
   //definig  method or functions
   methods: {
     formSubmitBtn() {
-      console.log("form Submited", this.uName, this.uEmail, this.uPass, this.checkBoxValue);
+      console.log(
+        "form Submited",
+        this.uName,
+        this.uEmail,
+        this.uPass,
+        this.checkBoxValue
+      );
     },
   },
 };
