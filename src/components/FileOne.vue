@@ -1,10 +1,14 @@
 <!-- 1st use templete where we write html code -->
 <template>
   <div>
-    <p>File One</p>
+    <!-- <p>File One</p>
     <FileTwo />
+    <p>Method and data?</p>
     <Method_and_Data />
-    <Event />
+    <p>Event Handling</p>
+    <Event /> -->
+    <p>Form Input</p>
+    <Input />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -18,6 +22,7 @@
 <script>
 import FileTwo from "./FileTwo.vue";
 import Method_and_Data from "./Method_and_Data.vue";
+import Input from "./Input.vue";
 import Event from "./Event.vue";
 
 export default {
@@ -25,6 +30,7 @@ export default {
     FileTwo,
     Method_and_Data,
     Event,
+    Input,
   },
 };
 </script>

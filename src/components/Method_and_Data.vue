@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  //deifining data
+  //deifining data => it contain all the variables
   data() {
     return {
       userName: "Rakes Kumar",
