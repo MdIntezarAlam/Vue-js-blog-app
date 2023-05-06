@@ -4,6 +4,7 @@
     <p>File One</p>
     <FileTwo />
     <Method_and_Data />
+    <Event />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -17,11 +18,13 @@
 <script>
 import FileTwo from "./FileTwo.vue";
 import Method_and_Data from "./Method_and_Data.vue";
+import Event from "./Event.vue";
 
 export default {
   components: {
     FileTwo,
     Method_and_Data,
+    Event,
   },
 };
 </script>
