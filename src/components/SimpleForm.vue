@@ -6,8 +6,38 @@
     <br /><br />
     <input v-model="fomValue.uPass" type="text" placeholder="Enter Password" />
     <br /><br />
-    <button v-on:click="formSubmitBtn" type="button">form submit</button>
+    <p>Technology</p>
+    <label for="java">java</label>
+    <input
+      v-model="fomValue.technoloy"
+      type="checkbox"
+      value="java"
+      id="java"
+    />
+    <label for="python">python</label>
+    <input
+      v-model="fomValue.technoloy"
+      type="checkbox"
+      value="python"
+      id="python"
+    />
     <br /><br />
+    <p>Select Country</p>
+    <select v-model="fomValue.country">
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="Nepal">Nepal</option>
+    </select>
+
+    <br />
+    <br />
+    <p>Select gender</p>
+    <label>Male</label>
+    <input v-model="fomValue.gender"  type="radio" name="gender" value="male" />
+    <label>Female</label>
+    <input  v-model="fomValue.gender" type="radio" name="gender" value="female" />
+
+    <button v-on:click="formSubmitBtn" type="button">form submit</button>
   </div>
 </template>
 
@@ -20,6 +50,9 @@ export default {
         uName: "",
         uEmail: "",
         uPass: "",
+        technoloy: [],
+        country: "",
+        gender: "",
       },
     };
   },
