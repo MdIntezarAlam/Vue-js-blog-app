@@ -15,8 +15,8 @@
     <ForLoop /> -->
     <!-- <p>IncreDescre in vue js</p>
     <IncreDescre /> -->
-    <p>Props in vue js</p>
-    <Props />
+    <p>props in vue js</p>
+    <ParentProps />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -34,7 +34,7 @@ import Input from "./Input.vue";
 import Event from "./Event.vue";
 import IfElse from "./IfElse.vue";
 import ForLoop from "./ForLoop.vue";
-import Props from './Props.vue'
+import ParentProps from './ParentProps.vue'
 import IncreDescre from './IncreDescre.vue'
 export default {
   components: {
@@ -45,7 +45,7 @@ export default {
     IfElse,
     ForLoop,
     IncreDescre,
-    Props,
+    ParentProps,
   },
 };
 </script>
