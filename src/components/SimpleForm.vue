@@ -1,5 +1,10 @@
 <template>
   <div>
+    <ul>
+      <li v-for="item in error" v-bind:key="item">
+    {{ item }} Not Valid
+    </li>
+    </ul>
     <input v-model="fomValue.uName" type="text" placeholder="Enter Name" />
     <br /><br />
     <input v-model="fomValue.uEmail" type="text" placeholder="Enter Email" />
@@ -33,9 +38,14 @@
     <br />
     <p>Select gender</p>
     <label>Male</label>
-    <input v-model="fomValue.gender"  type="radio" name="gender" value="male" />
+    <input v-model="fomValue.gender" type="radio" name="gender" value="male" />
     <label>Female</label>
-    <input  v-model="fomValue.gender" type="radio" name="gender" value="female" />
+    <input
+      v-model="fomValue.gender"
+      type="radio"
+      name="gender"
+      value="female"
+    />
 
     <button v-on:click="formSubmitBtn" type="button">form submit</button>
   </div>
@@ -54,12 +64,26 @@ export default {
         country: "",
         gender: "",
       },
+      //   validation for form
+      error: [],
     };
   },
   //definig  method or functions
   methods: {
     formSubmitBtn() {
-      console.log("Form SUbmitted", this.fomValue);
+      //using validation in form
+      this.error = [];
+      for (const items in this.fomValue) {
+        // formValue ka inside items mai agar error hai tho error push karna hai
+        if (this.fomValue[items] === "" || this.fomValue[items].length === 0) {
+          this.error.push(items);
+        }
+      }
+      if (this.error.length === 0) {
+        alert("data is submitted");
+      }
+      console.log("Form error", this.error);
+      //   console.log("Form SUbmitted", this.fomValue);
     },
   },
 };
