@@ -11,8 +11,12 @@
     <Input /> -->
     <!-- <p>if else</p>
     <IfElse /> -->
-    <p>For Loop</p>
-    <ForLoop />
+    <!-- <p>For Loop</p>
+    <ForLoop /> -->
+    <!-- <p>IncreDescre in vue js</p>
+    <IncreDescre /> -->
+    <p>Props in vue js</p>
+    <Props />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -30,6 +34,8 @@ import Input from "./Input.vue";
 import Event from "./Event.vue";
 import IfElse from "./IfElse.vue";
 import ForLoop from "./ForLoop.vue";
+import Props from './Props.vue'
+import IncreDescre from './IncreDescre.vue'
 export default {
   components: {
     FileTwo,
@@ -38,6 +44,8 @@ export default {
     Input,
     IfElse,
     ForLoop,
+    IncreDescre,
+    Props,
   },
 };
 </script>
