@@ -15,10 +15,10 @@
     <ForLoop /> -->
     <!-- <p>IncreDescre in vue js</p>
     <IncreDescre /> -->
-    <!-- <p>props in vue js</p>
-    <ParentProps /> -->
+    <p>props in vue js</p>
+    <ParentProps />
     <!-- How to reuse component -->
-    <Reusable2 />
+    <!-- <Reusable2 /> -->
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>

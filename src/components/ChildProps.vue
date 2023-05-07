@@ -1,6 +1,6 @@
 <template>
-  <div>Child Props Components data is: {{ childuserData }}</div>
-  <div>Child Props Components ArryOf Data is: {{ user}}</div>
+  <div>Child Props Components data userName is: {{ userName }}</div> <br>
+  <div>Child Props Components ArryOf Data is: {{ childUserData}}</div>
 </template>
 
 <script>
@@ -9,7 +9,8 @@
 export default {
   name: "ChildProps",
   props:{
-    childuserData:String,
+    userName:String,
+    childUserData:Object
     
   }
 };

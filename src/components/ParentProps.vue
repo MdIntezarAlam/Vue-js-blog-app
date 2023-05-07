@@ -2,7 +2,7 @@
   <div>Parent Props Componetns</div>
   <p>Get Child Props Data.</p>
   <!-- we can pass multiple data from parent to child components sunf : -->
-  <ChildProps childuserData="Yahudi" :childUserData="childUserData" />
+  <ChildProps userName="Yahudi" :childUserData="childUserData" />
   <br />
 </template>
 
