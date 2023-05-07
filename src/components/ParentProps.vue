@@ -1,6 +1,6 @@
 <template>
   <div>Parent Props Componetns</div>
-  <p>Get Child Props Data</p>
+  <p>Get Child Props Data.</p>
   <!-- we can pass multiple data from parent to child components -->
   <ChildProps childuserData="Yahudi" user="userData" />
   <br />
