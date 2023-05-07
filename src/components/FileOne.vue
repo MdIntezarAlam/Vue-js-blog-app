@@ -15,10 +15,12 @@
     <ForLoop /> -->
     <!-- <p>IncreDescre in vue js</p>
     <IncreDescre /> -->
-    <p>props in vue js</p>
-    <ParentProps />
+    <!-- <p>props in vue js</p>
+    <ParentProps /> -->
     <!-- How to reuse component -->
     <!-- <Reusable2 /> -->
+    <!-- How to reuse component -->
+    <SimpleForm />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -39,6 +41,7 @@ import ForLoop from "./ForLoop.vue";
 import ParentProps from './ParentProps.vue'
 import IncreDescre from './IncreDescre.vue'
 import Reusable2 from './Reusable2.vue'
+import SimpleForm from './SimpleForm.vue'
 export default {
   components: {
     FileTwo,
@@ -49,7 +52,8 @@ export default {
     ForLoop,
     IncreDescre,
     ParentProps,
-    Reusable2
+    Reusable2,
+    SimpleForm
   },
 };
 </script>
