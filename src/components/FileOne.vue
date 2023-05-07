@@ -20,7 +20,8 @@
     <!-- How to reuse component -->
     <!-- <Reusable2 /> -->
     <!-- How to reuse component -->
-    <SimpleForm />
+    <!-- <SimpleForm /> -->
+    <DynamicComp />
   </div>
   <!--3=> and component will be use in templete (html) section as a component -->
 </template>
@@ -42,6 +43,7 @@ import ParentProps from './ParentProps.vue'
 import IncreDescre from './IncreDescre.vue'
 import Reusable2 from './Reusable2.vue'
 import SimpleForm from './SimpleForm.vue'
+import DynamicComp from './DynamicComp.vue'
 export default {
   components: {
     FileTwo,
@@ -53,7 +55,8 @@ export default {
     IncreDescre,
     ParentProps,
     Reusable2,
-    SimpleForm
+    SimpleForm,
+    DynamicComp
   },
 };
 </script>
