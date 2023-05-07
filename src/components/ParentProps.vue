@@ -1,8 +1,8 @@
 <template>
   <div>Parent Props Componetns</div>
   <p>Get Child Props Data.</p>
-  <!-- we can pass multiple data from parent to child components -->
-  <ChildProps childuserData="Yahudi" user="userData" />
+  <!-- we can pass multiple data from parent to child components sunf : -->
+  <ChildProps childuserData="Yahudi" :childUserData="childUserData" />
   <br />
 </template>
 
@@ -15,6 +15,10 @@ export default {
   },
   data() {
     return {
+      childUserData: [
+        { name: "Rakesh", email: "rakesh@gmail.com" },
+        { name: "Rakesh", email: "rakesh@gmail.com" },
+      ],
     };
   },
   methods: {},

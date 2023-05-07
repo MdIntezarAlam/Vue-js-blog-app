@@ -10,7 +10,7 @@ export default {
   name: "ChildProps",
   props:{
     childuserData:String,
-    user:{}
+    
   }
 };
 </script>
