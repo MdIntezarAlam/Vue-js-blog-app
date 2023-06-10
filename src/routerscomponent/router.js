@@ -6,6 +6,7 @@ import About from "../routerscomponent/About.vue";
 import Login from "../routerscomponent/Login.vue";
 import Signup from "../routerscomponent/Signup.vue";
 import Cart from "../routerscomponent/Cart.vue";
+import DynamicRoutePage from "../routerscomponent/DynamicRoutePage.vue";
 
 // 2nd step Add a routing directory & configuration file
 //           /src/router/index.js'
@@ -22,6 +23,11 @@ const routes = [
     component: Home,
   },
   {
+    path: "/about",
+    name: "About",
+    component: About,
+  },
+  {
     path: "/login",
     name: "Login",
     component: Login,
@@ -32,14 +38,14 @@ const routes = [
     component: Signup,
   },
   {
-    path: "/About",
-    name: "About",
-    component: About,
-  },
-  {
     path: "/cart",
     name: "Cart",
     component: Cart,
+  },
+  {
+    path: "/dynamicRoutePage/:name", //<--for dynamic routing notice the colon
+    name: "DynamicRoutePage",
+    component: DynamicRoutePage,
   },
 ];
 
